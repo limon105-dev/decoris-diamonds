@@ -1,0 +1,144 @@
+/*  section css start */
+.slider-hero-item {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 37px;
+    overflow: hidden;
+    margin: 20px 0 0 0;
+}
+
+.hero-slider-area .slider-hero-item {
+    height: 100%;
+}
+
+.slider-hero-overlay {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.hero-content-inner {
+    padding: 123px 0 162px;
+}
+
+.h1.hero-title {
+    font-weight: 300;
+}
+
+.hero-text {
+    font-size: 20px;
+    margin: 16px 0 0 0;
+}
+
+.hero-content .btn {
+    margin: 30px 0 0 0;
+}
+
+.hero-slider-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transform: translateX(-50%);
+    gap: 16px;
+}
+
+.swiper.hero-slider .swiper-pagination {
+    position: unset;
+}
+
+.swiper.hero-slider .swiper-button-prev,
+.swiper.hero-slider .swiper-button-next {
+    position: unset;
+    margin: 0;
+    width: fit-content;
+    height: auto;
+    background: transparent;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.swiper.hero-slider .swiper-button-prev::after,
+.swiper.hero-slider .swiper-button-next::after {
+    color: var(--white);
+}
+
+.swiper.hero-slider .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--white);
+    width: 12px;
+    height: 12px;
+    overflow: visible;
+    opacity: 0.5;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: none;
+}
+
+.swiper.hero-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper.hero-slider .swiper-pagination .swiper-pagination-bullet::after {
+    left: -3px;
+    top: auto;
+    bottom: -4px;
+    width: 18px;
+    height: 9px;
+    background-image: url("../images/hero-pagination.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+
+
+/*  section css end */
+
+@media only screen and (max-width:767px) {
+
+    /*  section css start */
+
+
+    /*  section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /*  section css start */
+    .slider-hero-item {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .hero-content-inner {
+        padding: 50px 0 50px;
+    }
+
+    .h1.hero-title {
+        max-width: 290px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        margin: 10px 0 0 0;
+    }
+
+    .hero-content .btn {
+        margin: 20px 0 0 0;
+    }
+
+    .hero-slider-btn {
+        display: none;
+    }
+
+    /*  section css end */
+}

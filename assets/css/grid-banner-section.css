@@ -1,0 +1,135 @@
+/* grid-banner-section css start */
+.grid-banner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.grid-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-banner .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.h2.grid-banner-title {
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.grid-banner-text {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 18px 0 0 0;
+}
+
+.grid-banner-content .btn {
+    margin: 38px 0 0 0;
+}
+
+.grid-banner:first-child {
+    grid-row: span 2;
+}
+
+.grid-banner:first-child .overlay {
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(358.92deg, #000000 5.28%, rgba(0, 0, 0, 0) 84.56%);
+}
+
+.grid-banner:first-child .overlay .grid-banner-content {
+    text-align: center;
+}
+
+.grid-banner:nth-child(2) {
+    grid-column: span 2;
+}
+
+.grid-banner:nth-child(2) .overlay {
+    background: linear-gradient(90.22deg, #44456A 0.21%, rgba(68, 69, 106, 0) 58.95%);
+}
+
+.grid-banner:last-child .overlay {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 68.41%);
+}
+
+/* grid-banner-section css end */
+
+@media only screen and (max-width: 1200px) {
+
+    /* grid-banner-section css start */
+    .grid-banner-wrapper {
+        gap: 20px;
+    }
+
+    .grid-banner .overlay {
+        padding: 20px;
+    }
+
+    /* grid-banner-section css end */
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* grid-banner-section css start */
+    .grid-banner-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .grid-banner:first-child {
+        grid-row: span 1;
+        height: 800px;
+    }
+
+    .grid-banner:nth-child(2) {
+        grid-column: span 1;
+    }
+
+    .grid-banner .overlay {
+        padding: 100px 20px;
+    }
+
+    .grid-banner:first-child .overlay {
+        padding: 20px;
+    }
+
+    /* grid-banner-section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* grid-banner-section css start */
+    .grid-banner:first-child {
+        height: 460px;
+    }
+
+    .grid-banner .overlay {
+        padding: 20px;
+    }
+
+    .grid-banner-content .btn {
+        margin: 16px 0 0 0;
+    }
+
+    .grid-banner-text {
+        font-size: 16px;
+        margin: 10px 0 0 0;
+        line-height: 21px;
+    }
+
+
+    /* grid-banner-section css end */
+}

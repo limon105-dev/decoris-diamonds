@@ -1,0 +1,100 @@
+/* news-letter section css start */
+.news-letter-wrapper {
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.news-letter-heading-area {
+    text-align: center;
+}
+
+.news-letter-heading-area .icon {
+    display: flex;
+    margin: 0 0 30px 0;
+    justify-content: center;
+}
+
+
+.news-letter-heading-area .h2.news-letter-heading {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.news-letter-input-field {
+    display: flex;
+    border: 1px solid var(--border-color);
+    height: 50px;
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+.news-letter-input-field input {
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.news-letter-input-field input::placeholder {
+    font-size: 18px;
+}
+
+
+.news-letter-input-field .btn {
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    height: 100%;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.news-letter-input-field .btn:hover {
+    background: var(--border-color3);
+}
+
+/* news-letter section css end */
+
+@media only screen and (max-width:992px) {
+
+    /* news-letter section css start */
+    /* news-letter section css end */
+}
+
+@media only screen and (max-width:767px) {
+
+    /* news-letter section css start */
+    /* news-letter section css end */
+}
+
+@media only screen and (max-width: 575px) {
+
+    /* news-letter section css start */
+    .news-letter-heading-area .icon {
+        margin: 0 0 20px 0;
+    }
+
+    .news-letter-input-field {
+        margin: 20px 0 0 0;
+    }
+
+    .news-letter-input-field .btn {
+        padding: 0 20px;
+    }
+
+    .news-letter-input-field input {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .news-letter-input-field input::placeholder {
+    font-size: 14px;
+}
+
+    /* news-letter section css end */
+}

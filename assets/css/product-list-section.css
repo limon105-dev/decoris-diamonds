@@ -1,0 +1,61 @@
+/* product-list-section css start */
+.product-list-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    row-gap: 70px;
+}
+
+.product-list-item .product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.product-list-item .product-card .card-badge {
+    right: auto;
+    left: 15px;
+}
+
+/* product-list-section css end */
+
+@media only screen and (max-width: 1200px) {
+
+    /* product-list-section css start */
+    .product-list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* product-list-section css end */
+}
+
+@media only screen and (max-width: 992px) {
+
+    /* product-list-section css start */
+    .product-list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-list-items {
+        gap: 20px;
+        row-gap: 40px;
+    }
+
+    /* product-list-section css end */
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* product-list-section css start */
+    .product-list-items {
+        gap: 14px;
+    }
+
+    .product-list-item .product-card {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+
+    /* product-list-section css end */
+}

@@ -1,0 +1,46 @@
+/* icon-link-section css start */
+.icon-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+
+.icon-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon-link-item .icon {
+    display: flex;
+}
+
+.icon-link-item p {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.icon-link-item:hover p {
+    text-decoration: underline;
+}
+
+/* icon-link-section css end */
+
+@media only screen and (max-width: 575px) {
+
+    /* icon-link-section css start */
+    .icon-link-wrapper {
+        gap: 20px;
+    }
+
+    .icon-link-item .icon svg {
+        height: 30px;
+    }
+
+    /* icon-link-section css end */
+}
