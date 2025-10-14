@@ -803,6 +803,206 @@ button {
 /* side-cart-product-content css end */
 /* cart-sidebar css end */
 
+/* varient css start */
+.product-varient {
+    margin: 30px 0 0 0;
+}
+
+.product-varient-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 16px 0;
+}
+
+.h6.product-varient-title {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.product-varient-popup-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    text-decoration: underline;
+}
+
+.product-varient-field-wrap {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.product-varient-input-field {
+    position: relative;
+    cursor: pointer;
+}
+
+.product-varient-input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+}
+
+.product-varient-label {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    user-select: none;
+}
+
+.product-varient-input-field .product-varient-label .varient-value {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-wrap: nowrap;
+    text-align: center;
+    transition: all ease .3s;
+}
+
+.product-varient-input-field.disabled {
+    opacity: 0.4;
+    cursor: no-drop;
+}
+
+.product-varient-input-field.disabled .product-varient-label {
+    cursor: no-drop;
+    text-decoration: line-through;
+}
+
+/* color varient css start */
+.product-varient-field-wrap.product-color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-varient-field-wrap.product-color .varient-color {
+    width: 38px;
+    height: 38px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50px;
+    background: var(--white);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3s;
+}
+
+.product-varient-field-wrap.product-color .varient-color span {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: block;
+}
+
+.product-varient-field-wrap .varient-title {
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 10px 0 0 0;
+    transition: all ease .3s;
+}
+
+.product-varient-field-wrap.product-color .product-varient-input-field:first-child .varient-color span {
+    background: linear-gradient(159.44deg, #B3B2AF 12.24%, #F7F7F7 54.35%, #F7F7F7 58.18%, #B3B2AF 88.81%);
+}
+
+.product-varient-field-wrap.product-color .product-varient-input-field:nth-child(2) .varient-color span {
+    background: linear-gradient(159.44deg, #E1B94F 12.24%, #FCF1D5 54.35%, #FCF1D5 58.18%, #E1B94F 88.81%);
+}
+
+.product-varient-field-wrap.product-color .product-varient-input-field:nth-child(3) .varient-color span {
+    background: linear-gradient(159.44deg, #EC8A55 12.24%, #FCEDE2 54.35%, #FCEDE2 58.18%, #EC8A55 88.81%);
+}
+
+.product-varient-field-wrap.product-color .product-varient-input-field:last-child .varient-color span {
+    background: linear-gradient(159.44deg, #B3B2AF 12.24%, #F7F7F7 54.35%, #F7F7F7 58.18%, #B3B2AF 88.81%);
+}
+
+.product-varient-field-wrap.product-color .product-varient-label:hover .varient-color {
+    border-color: var(--paragraph-text-color);
+}
+
+.product-varient-field-wrap .product-varient-label:hover .varient-title {
+    color: var(--paragraph-text-color);
+}
+
+.product-varient-field-wrap.product-color .product-varient-input-field input[type="radio"]:checked~.product-varient-label .varient-color {
+    border-color: var(--paragraph-text-color);
+}
+
+.product-varient-field-wrap .product-varient-input-field input[type="radio"]:checked~.product-varient-label .varient-title {
+    color: var(--paragraph-text-color);
+}
+
+/* color varient css end */
+
+/* style varient css end */
+.product-varient-field-wrap.product-style {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-varient-field-wrap.product-style .varient-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    transition: all ease .3s;
+}
+
+.product-varient-field-wrap.product-style .product-varient-input-field input[type="radio"]:checked~.product-varient-label .varient-img {
+    border-color: var(--paragraph-text-color);
+}
+
+/* style varient css end */
+
+/* size varient css start */
+.product-varient-field-wrap.product-size {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.product-varient-field-wrap.product-size .varient-value {
+    padding: 12px 12px;
+    border: 1px solid var(--border-color2);
+}
+
+.product-varient-field-wrap.product-size .varient-value .varient-title {
+    margin: 0;
+    color: var(--paragraph-text-color);
+}
+
+.product-varient-field-wrap.product-size .product-varient-input-field input[type="radio"]:checked~.product-varient-label .varient-value {
+    background: var(--border-color2);
+}
+
+.product-varient-field-wrap.product-size .product-varient-input-field input[type="radio"]:checked~.product-varient-label .varient-value .varient-title {
+    color: var(--white);
+}
+
+/* size varient css end */
+
+
+
+/* varient css end */
+
 @media only screen and (max-width: 992px) {
 
     /* common css start */
@@ -994,6 +1194,35 @@ button {
     }
 
     /* side-cart css end */
+
+    /* varient css start */
+    .product-varient-field-wrap.product-color {
+        gap: 16px;
+    }
+
+    .product-varient-field-wrap .varient-title {
+        margin: 8px 0 0 0;
+        font-size: 12px;
+    }
+
+    .product-varient-field-wrap.product-style .varient-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-varient-field-wrap.product-size .varient-value .varient-title {
+        font-size: 14px;
+    }
+
+    .price-input-wrap .field {
+        width: 140px;
+    }
+
+    .price-input-wrap .field input {
+        font-size: 14px;
+    }
+
+    /* varient css end */
 
     /* common css end */
 }
