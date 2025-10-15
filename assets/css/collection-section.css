@@ -378,10 +378,6 @@
         line-height: 16px;
     }
 
-    .filter-box {
-        width: 100%;
-    }
-
     /* collection-section css end */
 }
 
@@ -449,6 +445,10 @@
 
     .collection-wrapper .pagination {
         margin: 30px 0 0 0;
+    }
+
+    .filter-box {
+        width: 100%;
     }
 
     .filter-open-btn {

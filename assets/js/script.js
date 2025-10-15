@@ -339,3 +339,25 @@ rangeInput.forEach((input) => {
   });
 });
 // price range js end---
+
+// modal js start---
+var body = document.querySelector("body");
+var modal = document.querySelector(".product-info-modal");
+var product_info_modal_btn = document.querySelector(".product-info-modal-btn");
+var closeButton = document.querySelector(".modal-close-button");
+
+function toggleModal() {
+	modal.classList.toggle("show-modal");
+	body.classList.toggle("active");
+}
+
+function windowOnClick(event) {
+	if (event.target === modal) {
+		toggleModal();
+	}
+}
+
+product_info_modal_btn.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+// modal js end---
